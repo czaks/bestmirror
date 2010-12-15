@@ -1,0 +1,4 @@
+Options +SymlinksIfOwnerMatch
+RewriteEngine On
+RewriteRule bestmirror.php - [L,QSA]
+RewriteRule (.*) bestmirror.php [L,QSA]
