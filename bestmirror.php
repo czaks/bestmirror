@@ -19,6 +19,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
+function shuffle_assoc($list) { 
+    if (!is_array($list)) {
+        return $list; 
+    }
+ 
+    $keys = array_keys($list); 
+    shuffle($keys); 
+    $random = array(); 
+    foreach ($keys as $key) {
+        $random[$key] = $list[$key]; 
+    }
+    return $random;
+} 
+
 require("config.php");
 ?>
 <!DOCTYPE html>

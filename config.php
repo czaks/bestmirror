@@ -6,6 +6,6 @@ $mirrors = array(
 	"http://sundance.webchat.6irc.net" => "http://sundance.webchat.6irc.net/images/qwebircsmall.png",
 	"http://minimal.webchat.6irc.net" => "http://minimal.webchat.6irc.net/images/qwebircsmall.png",
 );
-shuffle($mirrors);
+$mirrors = shuffle_assoc($mirrors);
 
 $default_mirror = "http://sundance.webchat.6irc.net";
